@@ -11,7 +11,7 @@ import (
 )
 
 type options struct {
-	Status string `short:"s" long:"status" description:"tcp status\nTCP_ESTABLISHED|TCP_SYN_SENT|TCP_SYN_RECV|TCP_FIN_WAIT1|TCP_FIN_WAIT2\nTCP_TIME_WAIT|TCP_CLOSE|TCP_CLOSE_WAIT|TCP_LAST_ACK|TCP_LISTEN|TCP_CLOSING|TCP_NEW_SYN_RECV"`
+	Status string `short:"s" long:"status" description:"tcp status\nTCP_ESTABLISHED|TCP_SYN_SENT|TCP_SYN_RECV|TCP_FIN_WAIT1|TCP_FIN_WAIT2\nTCP_TIME_WAIT|TCP_CLOSE|TCP_CLOSE_WAIT|TCP_LAST_ACK|TCP_LISTEN|TCP_CLOSING|TCP_NEW_SYN_RECV" required:"true"`
 	// SrcPort  string  `short:"p" long:"port" description:"source pord number"`
 	Warning  float64 `short:"w" long:"warning" description:"Warning threshold (num)"`
 	Critical float64 `short:"c" long:"critical" description:"Critical threshold (num)"`
